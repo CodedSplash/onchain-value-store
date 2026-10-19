@@ -20,9 +20,9 @@
 - [x] Тест логики деплоя (белый список, запись файла)
 
 ## Этап 4. Клиент
-- [ ] `client/crypto.ts`, `client/errors.ts`
-- [ ] `ValueStoreReader`, `ValueStoreWriter`, `client/index.ts`
-- [ ] Тесты шифрования и клиента, сквозной тест на Hardhat network
+- [x] `client/crypto.ts`, `client/errors.ts`, `client/abi.ts`
+- [x] `ValueStoreReader`, `ValueStoreWriter`, `client/index.ts`
+- [x] Тесты шифрования и клиента, сквозной тест через JSON-RPC сервер Hardhat (117 тестов всего)
 
 ## Этап 5. Скрипты управления
 - [ ] `keygen`, `get`, `set-string`, `set-number`, `clear-string`, `clear-number`, `add-editor`, `remove-editor`, `status`
