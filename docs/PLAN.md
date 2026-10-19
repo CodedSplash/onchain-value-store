@@ -15,9 +15,9 @@
 - [x] Покрытие: 100% строк и выражений (`npm run coverage`)
 
 ## Этап 3. Деплой
-- [ ] `scripts/deploy.ts`: белый список chainId, подтверждения, `deployments/<network>.json`
-- [ ] Опциональная верификация на Etherscan
-- [ ] Тест логики деплоя (белый список, запись файла)
+- [x] `scripts/deploy.ts`: белый список chainId, подтверждения, `deployments/<network>.json`
+- [x] Опциональная верификация на Etherscan
+- [x] Тест логики деплоя (белый список, запись файла)
 
 ## Этап 4. Клиент
 - [ ] `client/crypto.ts`, `client/errors.ts`
