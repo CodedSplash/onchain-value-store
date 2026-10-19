@@ -1,0 +1,28 @@
+# dependencies
+node_modules/
+
+# Hardhat build output and caches
+artifacts/
+cache/
+types/
+coverage/
+ignition/deployments/chain-31337/
+
+# Deployment records: only the placeholder is tracked
+deployments/*
+!deployments/.gitkeep
+
+# Secrets: never commit
+.env
+.env.*
+!.env.example
+*.key
+*.key.hex
+*.pem
+keys/
+secrets/
+
+# misc
+.DS_Store
+*.log
+dist/

@@ -1,0 +1,60 @@
+{
+  "name": "valuestore",
+  "version": "1.0.0",
+  "description": "ValueStore: on-chain value store (string + number) for Ethereum testnets, public or client-side encrypted mode, with a TypeScript client.",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^4.2.1",
+    "@nomicfoundation/hardhat-ethers-chai-matchers": "^3.0.13",
+    "@nomicfoundation/hardhat-ignition": "^3.1.9",
+    "@nomicfoundation/hardhat-ignition-ethers": "^3.1.6",
+    "@nomicfoundation/hardhat-keystore": "^3.1.2",
+    "@nomicfoundation/hardhat-mocha": "^4.0.1",
+    "@nomicfoundation/hardhat-network-helpers": "^3.0.12",
+    "@nomicfoundation/hardhat-toolbox-mocha-ethers": "^4.0.0",
+    "@nomicfoundation/hardhat-typechain": "^3.1.2",
+    "@nomicfoundation/hardhat-verify": "^3.1.3",
+    "@nomicfoundation/ignition-core": "^3.1.11",
+    "@openzeppelin/contracts": "^5.6.1",
+    "@types/chai": "^5.2.3",
+    "@types/chai-as-promised": "^8.0.2",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^22.20.5",
+    "chai": "^6.3.0",
+    "hardhat": "^3.20.0",
+    "mocha": "^12.0.3",
+    "solhint": "^6.2.5",
+    "tsx": "^4.23.15",
+    "typescript": "~6.0.3"
+  },
+  "engines": {
+    "node": ">=22.10.0"
+  },
+  "scripts": {
+    "build": "hardhat build",
+    "test": "hardhat test",
+    "test:contract": "hardhat test mocha test/contract",
+    "coverage": "hardhat test --coverage",
+    "typecheck": "tsc --noEmit",
+    "lint": "npm run lint:sol && npm run typecheck",
+    "lint:sol": "solhint \"contracts/**/*.sol\"",
+    "node": "hardhat node",
+    "deploy:local": "hardhat run scripts/deploy.ts --network localhost",
+    "deploy:sepolia": "hardhat run scripts/deploy.ts --network sepolia",
+    "keygen": "tsx scripts/keygen.ts",
+    "status": "tsx scripts/status.ts",
+    "get": "tsx scripts/get.ts",
+    "set-string": "tsx scripts/set-string.ts",
+    "set-number": "tsx scripts/set-number.ts",
+    "clear-string": "tsx scripts/clear-string.ts",
+    "clear-number": "tsx scripts/clear-number.ts",
+    "add-editor": "tsx scripts/add-editor.ts",
+    "remove-editor": "tsx scripts/remove-editor.ts",
+    "example:read": "tsx examples/read-value.ts"
+  },
+  "dependencies": {
+    "ethers": "^6.17.0"
+  }
+}

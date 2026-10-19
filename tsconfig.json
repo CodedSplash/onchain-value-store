@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "lib": ["es2023"],
+    "module": "node20",
+    "target": "es2023",
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "types": ["node", "mocha"],
+    "verbatimModuleSyntax": true
+  },
+  "include": ["hardhat.config.ts", "client", "scripts", "test", "examples", "types"]
+}
