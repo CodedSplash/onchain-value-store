@@ -25,9 +25,9 @@
 - [x] Тесты шифрования и клиента, сквозной тест через JSON-RPC сервер Hardhat (117 тестов всего)
 
 ## Этап 5. Скрипты управления
-- [ ] `keygen`, `get`, `set-string`, `set-number`, `clear-string`, `clear-number`, `add-editor`, `remove-editor`, `status`
-- [ ] `examples/read-value.ts`
-- [ ] Проверка локального сценария на `hardhat node`
+- [x] `keygen`, `get`, `set-string`, `set-number`, `clear-string`, `clear-number`, `add-editor`, `remove-editor`, `status`
+- [x] `examples/read-value.ts`
+- [x] Проверка локального сценария на `hardhat node`: оба режима, запись, чтение, add/remove editor, ошибки (`NotAuthorized`, `KeyRequired`, `DecryptionError`)
 
 ## Этап 6. Безопасность и документация
 - [ ] solhint, Slither (или пометка о невозможности)

@@ -22,7 +22,8 @@
 | Локальная нода | `npm run node` |
 | Деплой локально | `npm run deploy:local` (нужна запущенная `npm run node`) |
 | Деплой Sepolia | `npx hardhat run scripts/deploy.ts --network sepolia` |
-| Управление | `npm run <keygen|status|get|set-string|set-number|clear-string|clear-number|add-editor|remove-editor> -- [args] [--network <name>]` |
+| Управление | `npm run <keygen\|status\|get\|set-string\|set-number\|clear-string\|clear-number\|add-editor\|remove-editor> -- [args] [--network sepolia\|hoodi\|localhost] [--account N]` (по умолчанию `sepolia`; `--account` только для localhost) |
+| Пример читателя | `npm run example:read -- <rpcUrl> <address>` (+ `VALUESTORE_KEY` для private) |
 
 Если binaries.soliditylang.org недоступен, задать `SOLC_PATH` в `.env` (путь к нативному solc 0.8.37).
 
