@@ -19,6 +19,7 @@
 | Все тесты | `npm test` |
 | Покрытие | `npm run coverage` (встроенное `hardhat test --coverage`) |
 | Линт | `npm run lint` (solhint + `tsc --noEmit`) |
+| Slither | `npm run slither` (нужен `pip install slither-analyzer`; без solc в PATH добавить `--solc <path>`) |
 | Локальная нода | `npm run node` |
 | Деплой локально | `npm run deploy:local` (нужна запущенная `npm run node`) |
 | Деплой Sepolia | `npx hardhat run scripts/deploy.ts --network sepolia` |

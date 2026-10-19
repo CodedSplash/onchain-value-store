@@ -52,7 +52,8 @@
     "clear-number": "tsx scripts/clear-number.ts",
     "add-editor": "tsx scripts/add-editor.ts",
     "remove-editor": "tsx scripts/remove-editor.ts",
-    "example:read": "tsx examples/read-value.ts"
+    "example:read": "tsx examples/read-value.ts",
+    "slither": "slither contracts/ValueStore.sol --config-file slither.config.json"
   },
   "dependencies": {
     "ethers": "^6.17.0"
