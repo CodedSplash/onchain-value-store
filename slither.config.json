@@ -1,0 +1,5 @@
+{
+  "filter_paths": "node_modules",
+  "solc_remaps": "@openzeppelin/=node_modules/@openzeppelin/",
+  "solc_args": "--evm-version prague --optimize"
+}
